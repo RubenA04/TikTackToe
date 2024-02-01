@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+   winning-blocks: #f4f4a6
+}
+
+body {
+    color: var(#5c0f23);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5c0f23;
+
+}
+
+#gameboard {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+} 
+
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a6f4de;
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+
+}
+/* fixed the whole buggy grid for the game */
+.box:nth-child(4) {
+    border-right: none;
+}
+
+.box:nth-child(7) {
+    border-right: none;
+}
+.box:nth-child(8) {
+    border-bottom: none;
+}
+
+.box:nth-child(9) {
+    border-bottom: none;
+}
+
+.box:nth-child(10) {
+    border-right: none;
+    border-bottom: none;
+}
+    
+
+button {
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: #a6f4de;
+    color: black solid;
+    border-color: black solid;
+    border-width: 4px;
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif; 
+
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
